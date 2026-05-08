@@ -1,3 +1,15 @@
+# Dependencies
+node_modules
+
+# Production build
+dist
+dist-ssr
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
 # Logs
 logs
 *.log
@@ -7,20 +19,40 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-.env
-.DS_Store
-*.local
-
-# Editor directories and files
+# Editor folders/files
 .vscode/*
 !.vscode/extensions.json
 .idea
-.DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Testing
+coverage
+
+# Vite
+vite.config.timestamp-*
+
+# Cache
+.cache
+.temp
+.tmp
+
+# Optional package manager files
+.pnpm-store
+
+# Local Netlify/Vercel settings
+.netlify
+.vercel
+
+# Storybook
+storybook-static
+
+# TypeScript cache
+*.tsbuildinfo
