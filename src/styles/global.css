@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@layer base { 
+@layer base{ 
 
 /* =====================
   2. RESET / BASE STYLES
@@ -61,9 +61,53 @@ svg {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
-  }}
+  }
+}
+
+/* =========================== 
+3. GLOBAL STYLES 
+===========================*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ff-heading);
+  line-height: 1.2;
+}
+
+body {
+  font-family: var(--ff-body);
+  font-size: var(--fs-body);
+  color: var(--body-fg);
+  background-color: var(--body-bg);
+  line-height: 1.5;
+}
 
 
+select,
+input,
+textarea {
+  background: var(--input-bg);
+}
+
+main {
+  margin-block: 2rem 3rem;
+}
+
+
+
+/* =========================== 
+4. CUSTOM UTILITY CLASSES 
+===========================*/
+.primary-heading {
+  font-size: var(--fs-primary-heading);
+}
+
+.secondary-heading {
+  font-size: var(--fs-secondary-heading);
+}
 
 }
 
